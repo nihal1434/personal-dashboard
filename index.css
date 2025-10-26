@@ -1,43 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}    
+
 body {
     margin: 0;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    min-width: 400px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #5f9341;
-    margin-bottom: 4px;
-}
-
-button {
-    background: #5f9341;
+    background: no-repeat center center fixed; 
+    background-size: cover;
     color: white;
-    padding: 10px 20px;
-    border: 1px solid #5f9341;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px #242424;
 }
 
-#delete-btn {
-    background: white;
-    color: #5f9341;
+main {
+    padding:1rem ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
 }
 
-ul {
-    margin-top: 20px;
-    list-style: none;
-    padding-left: 0;
+div.top {
+    display: flex;
+    justify-content: space-between;
 }
 
-li {
-    margin-top: 5px;
+h1#time {
+    font-size: 5rem;
+}
+.time{
+  position: fixed;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
 }
 
-a {
-    color: #5f9341;
+div#weather {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: flex-start;
+    margin-top: -20px;
 }
 
+div#weather > img {
+    width: 100px;
+}
 
+p.weather-city {
+    width: 100%;
+    text-align: right;
+    margin-top: -10px;
+    font-size: 1.5rem;
+}
+
+p.weather-temp {
+    font-size: 1.75rem;
+    margin-left: -10px;
+}
+
+p#author {
+    font-size: 1rem;
+}
+#author {
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+#author:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.repo {
+    background: #867e7e1a;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    backdrop-filter: blur(10px);
+}
+
+.repo a {
+    color: #f4ebc7;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.repo h3{
+ font-size: 1.5rem;
+}
+
+.repo a:hover {
+    text-decoration: underline;
+}
+
+.repo p {
+    font-size: 1rem;
+    color: #ccc;
+    margin: 0.25em 0 0;
+}
+#quote-section {
+  text-align: end;
+  max-width: 80%;
+  font-family: "Poppins", sans-serif;
+  color: #f4ebc7;
+  padding: 1em 1.5em;
+  border-radius: 1rem;
+}
+
+#quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 0.3em;
+}
+
+#quote-author {
+  font-size: 1.05rem;
+  opacity: 0.8;
+}
