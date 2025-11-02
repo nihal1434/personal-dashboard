@@ -2,7 +2,7 @@
     let authorLink = "";
 
     try {
-        const res = await fetch("https://apis.scrimba.com/nsplash/photos/random?orientation=landscape&query=nature");
+        const res = await fetch("https://apis.scrimba.com/unsplash/photos/random?orientation=landscape&query=nature");
         const data = await res.json();
         authorLink = data.user.links.html;
 
